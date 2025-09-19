@@ -1,90 +1,286 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+/* === General Styles === */
+body.admin-body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #323847;
-  padding: 30px 0 30px 0;
-}
-.form-container {
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.container {
+    display: flex;
+    width: 100%;
 }
 
-
-.form-label {
-  color: #333333;
-  font-size: 1.125rem;
-  font-weight: 500;
-
-}
-.form-input, .form-textarea {
-  width: 100%;
-  border: 1px solid #d1d5db;
-  padding: 0.5rem;
-  border-radius: 0.375rem;
-  
-}
-.form-radio, .form-checkbox {
-  margin-right: 0.5rem;
-  
-}
-.form-submit {
-  background-color: #007bff;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 0.375rem;
-  transition: background-color 0.3s;
-}
-.form-submit:hover {
-  background-color: #0056b3;
+/* === Sidebar === */
+.sidebar {
+    width: 240px;
+    background-color: #fff;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
-.form-container .check-container{
-  display: flex;
-  flex-direction: column;
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #06b399;
+    margin-bottom: 30px;
 }
 
-.button {
-  background-color: #ffffff00;
-  color: #323847;
-  width: 8.5em;
-  height: 2.9em;
-  border: #3654ff 0.2em solid;
-  border-radius: 11px;
-  text-align: right;
-  transition: all 0.6s ease;
+.logo span.exclamation {
+    color: #ff5722;
 }
 
-.button:hover {
-  cursor: pointer;
+.nav-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.button svg {
-  width: 1.6em;
-  margin: -0.2em 0.8em 1em;
-  position: absolute;
-  display: flex;
-  transition: all 0.6s ease;
+.nav-item {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #444;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
-.button:hover svg {
-  transform: translateX(5px);
+.nav-item:hover,
+.nav-item.active {
+    background: #06b399;
+    color: white;
 }
 
-.text {
-  margin: 0 1.5em
+.user-info {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
 }
 
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 10px auto 0;
+}
 
+/* === Main Content === */
+.main-content {
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    width: 200px;
+}
+
+.add-note-btn {
+    background-color: #06b399;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.add-note-btn:hover {
+    background-color: #049b84;
+}
+
+/* === Notes Grid === */
+.note-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease;
+}
+
+.note-card:hover {
+    transform: scale(1.01);
+}
+
+.note-title {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-content {
+    margin-top: 10px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.note-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.status-badge {
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+.status-badge.favorite {
+    background: #e0f7f4;
+    color: #06b399;
+}
+
+.status-badge.archived {
+    background: #fff4e0;
+    color: #ff9800;
+}
+
+/* === Dropdown Menu === */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dots-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.dropdown-btn:hover {
+    background: #f2f2f2;
+}
+
+/* === Modal Styles === */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+}
+
+.close-modal {
+    float: right;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.btn-save {
+    background: #06b399;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100%;
+}
+
+.btn-save:hover {
+    background: #049b84;
+}
+
+/* === Empty Notes Placeholder === */
+.no-notes {
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+    font-style: italic;
+}
