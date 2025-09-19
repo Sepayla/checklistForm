@@ -1,0 +1,6 @@
+{
+  "name": "sepayla/checklistform",
+  "require": {
+    "php": "^8.1"
+  }
+}
