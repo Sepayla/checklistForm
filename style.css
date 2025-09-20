@@ -76,7 +76,7 @@ body.admin-body {
     flex: 1;
     padding: 25px;
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* ✅ square grid */
+    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr)); /* ✅ square grid */
     gap: 20px;
     align-content: start;
 }
