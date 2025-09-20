@@ -75,8 +75,10 @@ body.admin-body {
 .main-content {
     flex: 1;
     padding: 25px;
-    display: flex;
-    flex-direction: column;
+    display: grid; /* ✅ use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* ✅ square grid */
+    gap: 20px;
+    align-content: start;
 }
 
 .headerA {
