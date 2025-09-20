@@ -25,12 +25,12 @@ body.admin-body {
 .logo {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #3b82f6; /* 🔵 blue */
+    color: #10b981; /* ✅ emerald green */
     margin-bottom: 30px;
 }
 
 .logo span.exclamation {
-    color: #a855f7; /* 🟣 purple */
+    color: #14b8a6; /* ✅ teal */
 }
 
 .nav-admin {
@@ -51,7 +51,7 @@ body.admin-body {
 
 .nav-item:hover,
 .nav-item.active {
-    background: #3b82f6; /* 🔵 active */
+    background: #10b981; /* ✅ emerald */
     color: white;
 }
 
@@ -107,7 +107,7 @@ body.admin-body {
 }
 
 .add-note-btn {
-    background-color: #3b82f6; /* 🔵 blue */
+    background-color: #10b981; /* ✅ emerald green */
     color: white;
     border: none;
     padding: 8px 15px;
@@ -118,7 +118,7 @@ body.admin-body {
 }
 
 .add-note-btn:hover {
-    background-color: #2563eb; /* darker blue */
+    background-color: #059669; /* ✅ darker emerald */
 }
 
 /* Keep main-content as column */
@@ -138,16 +138,16 @@ body.admin-body {
 }
 
 .note-card {
-    width: 1in;      /* ✅ fixed width */
-    height: 1in;     /* ✅ fixed height */
+    width: 1in;      
+    height: 1in;     
     background: white;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #d1fae5; /* ✅ soft green border */
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* ✅ center inside */
-    font-size: 0.7rem;   /* ✅ smaller text to fit */
+    align-items: center; 
+    font-size: 0.7rem;   
     overflow: hidden;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease;
@@ -155,18 +155,19 @@ body.admin-body {
 
 .note-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(16, 185, 129, 0.2); /* ✅ green glow */
 }
 
 
 /* === Notes Card === */
 .note-card {
     background: white;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #d1fae5; /* ✅ soft green border */
     border-radius: 5px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
     padding: 7px;
     transition: transform 0.2s ease;
-    aspect-ratio: 1 / 1; /* ✅ force square */
+    aspect-ratio: 1 / 1; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -175,12 +176,12 @@ body.admin-body {
 
 .note-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(16, 185, 129, 0.2); /* ✅ green glow */
 }
 
 .note-title {
     font-weight: 600;
-    font-size: 0.9rem;   /* smaller text for square */
+    font-size: 0.9rem;  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -211,13 +212,13 @@ body.admin-body {
 }
 
 .status-badge.favorite {
-    background: #dbeafe; /* light blue */
-    color: #3b82f6;     /* 🔵 blue */
+    background: #d1fae5; /* ✅ light green */
+    color: #10b981;      /* ✅ emerald */
 }
 
 .status-badge.archived {
-    background: #f3e8ff; /* light purple */
-    color: #a855f7;      /* 🟣 purple */
+    background: #ccfbf1; /* ✅ light teal */
+    color: #14b8a6;      /* ✅ teal */
 }
 
 /* === Dropdown Menu === */
@@ -312,7 +313,7 @@ textarea {
 }
 
 .btn-save {
-    background: #3b82f6; /* 🔵 blue */
+    background: #10b981; /* ✅ emerald */
     color: white;
     border: none;
     padding: 10px 15px;
@@ -323,7 +324,7 @@ textarea {
 }
 
 .btn-save:hover {
-    background: #2563eb;
+    background: #059669; /* ✅ darker emerald */
 }
 
 /* === Empty Notes Placeholder === */
