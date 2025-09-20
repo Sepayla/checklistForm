@@ -133,13 +133,6 @@ body.admin-body {
     transform: scale(1.01);
 }
 
-/* === Notes Grid Update === */
-.main-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* smaller square size */
-    gap: 20px;
-}
-
 .note-card {
     background: white;
     border: 1px solid #e0e0e0;
