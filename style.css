@@ -123,6 +123,22 @@ body.admin-body {
     background-color: #049b84;
 }
 
+/* Keep main-content as column */
+.main-content {
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grid only for notes */
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
 /* === Notes Grid === */
 .note-card {
     background: white;
