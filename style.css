@@ -76,6 +76,7 @@ body.admin-body {
     flex: 1;
     padding: 25px;
     display: flex; /* ✅ use grid layout */    
+    display:grid;
     flex-direction: column; 
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* ✅ square grid */
     gap: 20px;
