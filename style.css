@@ -25,12 +25,12 @@ body.admin-body {
 .logo {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #06b399;
+    color: #3b82f6; /* 🔵 blue */
     margin-bottom: 30px;
 }
 
 .logo span.exclamation {
-    color: #ff5722;
+    color: #a855f7; /* 🟣 purple */
 }
 
 .nav-admin {
@@ -51,7 +51,7 @@ body.admin-body {
 
 .nav-item:hover,
 .nav-item.active {
-    background: #06b399;
+    background: #3b82f6; /* 🔵 active */
     color: white;
 }
 
@@ -107,7 +107,7 @@ body.admin-body {
 }
 
 .add-note-btn {
-    background-color: #06b399;
+    background-color: #3b82f6; /* 🔵 blue */
     color: white;
     border: none;
     padding: 8px 15px;
@@ -118,7 +118,7 @@ body.admin-body {
 }
 
 .add-note-btn:hover {
-    background-color: #049b84;
+    background-color: #2563eb; /* darker blue */
 }
 
 /* Keep main-content as column */
@@ -205,13 +205,13 @@ body.admin-body {
 }
 
 .status-badge.favorite {
-    background: #e0f7f4;
-    color: #06b399;
+    background: #dbeafe; /* light blue */
+    color: #3b82f6;     /* 🔵 blue */
 }
 
 .status-badge.archived {
-    background: #fff4e0;
-    color: #ff9800;
+    background: #f3e8ff; /* light purple */
+    color: #a855f7;      /* 🟣 purple */
 }
 
 /* === Dropdown Menu === */
@@ -306,7 +306,7 @@ textarea {
 }
 
 .btn-save {
-    background: #06b399;
+    background: #3b82f6; /* 🔵 blue */
     color: white;
     border: none;
     padding: 10px 15px;
@@ -317,7 +317,7 @@ textarea {
 }
 
 .btn-save:hover {
-    background: #049b84;
+    background: #2563eb;
 }
 
 /* === Empty Notes Placeholder === */
