@@ -133,6 +133,16 @@ body.admin-body {
     transform: scale(1.01);
 }
 
+/* === Main Content === */
+.main-content {
+    flex: 1;
+    padding: 25px;
+    display: grid; /* ✅ switch to grid */
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* ✅ auto square grid */
+    gap: 20px;
+}
+
+/* === Notes Card === */
 .note-card {
     background: white;
     border: 1px solid #e0e0e0;
@@ -140,11 +150,11 @@ body.admin-body {
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
     padding: 15px;
     transition: transform 0.2s ease;
-    aspect-ratio: 1 / 1;       /* ✅ makes it a square */
+    aspect-ratio: 1 / 1; /* ✅ force square */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;          /* keep content inside */
+    overflow: hidden;
 }
 
 .note-card:hover {
