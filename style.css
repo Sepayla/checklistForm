@@ -129,35 +129,32 @@ body.admin-body {
     flex-direction: column;
 }
 
-/* Grid only for notes */
 .notes-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, 1in); /* ✅ each note = 1 inch */
+    gap: 15px;
     margin-top: 20px;
+    justify-content: start; /* ✅ align left instead of stretching */
 }
 
-/* === Notes Grid === */
 .note-card {
+    width: 1in;      /* ✅ fixed width */
+    height: 1in;     /* ✅ fixed height */
     background: white;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-    padding: 7px;
-    transition: transform 0.2s ease;
-    aspect-ratio: 1 / 1; /* ✅ force square */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center; /* ✅ center inside */
+    font-size: 0.7rem;   /* ✅ smaller text to fit */
     overflow: hidden;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-    padding: 7px;
-    margin-bottom: 15px;
     transition: transform 0.2s ease;
 }
 
 .note-card:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 
