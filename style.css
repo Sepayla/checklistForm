@@ -133,14 +133,6 @@ body.admin-body {
     transform: scale(1.01);
 }
 
-/* === Main Content === */
-.main-content {
-    flex: 1;
-    padding: 25px;
-    display: grid; /* ✅ switch to grid */
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* ✅ auto square grid */
-    gap: 20px;
-}
 
 /* === Notes Card === */
 .note-card {
