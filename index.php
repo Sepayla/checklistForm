@@ -119,7 +119,7 @@ $notes = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
             <div class="user-info">
                 <div class="user-text">
-                    <p>Hi John Harold!<br><span>Welcome back.</span></p>
+                    <p>Hi Elizabeth<br><span>Welcome to my Note it!</span></p>
                 </div>
             </div>
             <div class="user-avatar"></div>
