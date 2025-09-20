@@ -136,22 +136,22 @@ body.admin-body {
 /* === Notes Grid Update === */
 .main-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* ✅ smaller, square-like */
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* smaller square size */
     gap: 20px;
 }
 
 .note-card {
     background: white;
-    border: 1px solid #e0e0e0;   /* ✅ border added */
+    border: 1px solid #e0e0e0;
     border-radius: 12px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
     padding: 15px;
     transition: transform 0.2s ease;
-    aspect-ratio: 1 / 1;         /* ✅ makes each card a square */
+    aspect-ratio: 1 / 1;       /* ✅ makes it a square */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;            /* ✅ prevents overflow */
+    overflow: hidden;          /* keep content inside */
 }
 
 .note-card:hover {
@@ -161,7 +161,7 @@ body.admin-body {
 
 .note-title {
     font-weight: 600;
-    font-size: 0.9rem;           /* ✅ smaller text for compact look */
+    font-size: 0.9rem;   /* smaller text for square */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,7 +173,7 @@ body.admin-body {
     font-size: 0.8rem;
     flex: 1;
     overflow: hidden;
-    text-overflow: ellipsis;     /* ✅ truncate long text */
+    text-overflow: ellipsis;
 }
 
 .note-footer {
