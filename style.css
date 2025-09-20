@@ -140,9 +140,9 @@ body.admin-body {
 /* === Notes Grid === */
 .note-card {
     background: white;
-    border-radius: 12px;
+    border-radius: 5px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-    padding: 15px;
+    padding: 7px;
     margin-bottom: 15px;
     transition: transform 0.2s ease;
 }
@@ -156,9 +156,9 @@ body.admin-body {
 .note-card {
     background: white;
     border: 1px solid #e0e0e0;
-    border-radius: 12px;
+    border-radius: 5px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-    padding: 15px;
+    padding: 7px;
     transition: transform 0.2s ease;
     aspect-ratio: 1 / 1; /* ✅ force square */
     display: flex;
